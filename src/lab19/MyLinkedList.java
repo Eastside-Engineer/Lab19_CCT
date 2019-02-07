@@ -40,15 +40,15 @@ public class MyLinkedList implements MyList {
 	}
 	public boolean insertAt(int index, String item) {
 		
-//		Node prevNode = getNodeAt(index-1);
+		Node prevNode = getNodeAt(index-1);
 		Node newNode = new Node(item);
 		Node oldNode = getNodeAt(index);
 		//TODO set newNode to prevNode's next
 		//TODO set oldNode to newNode's next
 
 		if (index > 0 && index < length) {
-			newNode.setNext(getNodeAt(index));
-			oldNode.setNext(newNode);
+			newNode.setNext(oldNode);
+			prevNode.setNext(newNode);
 			
 			length++;
 		return true;

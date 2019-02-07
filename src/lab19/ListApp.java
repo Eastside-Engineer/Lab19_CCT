@@ -30,8 +30,8 @@ public class ListApp {
 		list.addAtBeginning("C");
 		list.addAtBeginning("B");
 		list.addAtBeginning("A");
-//		list.addAtEnd("C");
-//		list.addAtEnd("D");
+		list.addAtEnd("C");
+		list.addAtEnd("D");
 //		list.removeFromBeginning();
 //		list.removeFromEnd();
 		list.removeAt(2);
